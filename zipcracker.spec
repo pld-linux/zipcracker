@@ -6,7 +6,7 @@ Version:	0.1.1
 Release:	2
 License:	GPL
 Group:		Applications/Archiving
-Source0:	http://download.sourceforge.net/zipcracker/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	53eff1305484cb1fd08516023e6123fe
 # DO NOT USE SYSTEM SHARED ZLIB --misiek
 Source1:	http://www.gzip.org/zlib/zlib-%{zlib_v}.tar.gz
