@@ -47,7 +47,7 @@ cd zlib-%{zlib_v}
 rm -f missing
 %{__libtoolize}
 %{__gettextize}
-aclocal -I %{_aclocaldir}/gnome
+%{__aclocal} -I %{_aclocaldir}/gnome
 %{__autoconf}
 %{__automake}
 ln -s zlib-%{zlib_v} zlib
