@@ -3,7 +3,7 @@ Summary:	program that helps users recover their files from password protected zi
 Summary(pl):	program pozwalaj±cy na odzyskiwanie plików z archiwów zip zabezpieczonych has³em
 Name:		zipcracker
 Version:	0.1.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://download.sourceforge.net/zipcracker/%{name}-%{version}.tar.gz
@@ -72,8 +72,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf AUTHORS ChangeLog README* TODO
-
 %find_lang %{name}
 
 %clean
@@ -81,5 +79,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS ChangeLog README* TODO
 %attr(755,root,root) %{_bindir}/*
