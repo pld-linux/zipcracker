@@ -6,8 +6,6 @@ Version:	0.1.1
 Release:	1
 License:	GPL
 Group:		Applications/Archiving
-Group(de):	Applikationen/Archivierung
-Group(pl):	Aplikacje/Archiwizacja
 Source0:	http://download.sourceforge.net/zipcracker/%{name}-%{version}.tar.gz
 # DO NOT USE SYSTEM SHARED ZLIB --misiek
 Source1:	http://www.gzip.org/zlib/zlib-%{zlib_v}.tar.gz
