@@ -3,7 +3,7 @@ Summary:	program that helps users recover their files from password protected zi
 Summary(pl):	program pozwalaj±cy na odzyskiwanie plików z archiwów zip zabezpieczonych has³em
 Name:		zipcracker
 Version:	0.1.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
