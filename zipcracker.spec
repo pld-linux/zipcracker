@@ -15,14 +15,14 @@ Patch0:		%{name}-gettext.patch
 Patch1:		%{name}-zlib.patch
 Patch2:		http://zipcracker.sourceforge.net/zlib-%{zlib_v}.patch.gz
 URL:		http://zipcracker.sourceforge.net/
+BuildRequires:	ORBit-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel >= 1.0.0
 BuildRequires:	gtk+-devel >= 1.2.0
-BuildRequires:	pvm-devel >= 3.4.2
-BuildRequires:	ORBit-devel
-BuildRequires:	automake
-BuildRequires:	autoconf
 BuildRequires:	libtool
-BuildRequires:	gettext-devel
+BuildRequires:	pvm-devel >= 3.4.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc/X11/GNOME
@@ -34,7 +34,7 @@ password. ZipCracker uses brute force to find the password.
 
 %description -l pl
 ZipCracker to program pozwalaj±cy na odzyskiwanie plików z archiwów
-zip zabezpieczonych has³em w przypadkach gdu u¿ytkownik zapomnia³
+zip zabezpieczonych has³em w przypadkach gdy u¿ytkownik zapomnia³
 has³a. ZipCracker do znalezienia has³a u¿ywa metody brute force.
 
 %prep
