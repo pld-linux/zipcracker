@@ -7,8 +7,10 @@ Release:	2
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://download.sourceforge.net/zipcracker/%{name}-%{version}.tar.gz
+# Source0-md5:	53eff1305484cb1fd08516023e6123fe
 # DO NOT USE SYSTEM SHARED ZLIB --misiek
 Source1:	http://www.gzip.org/zlib/zlib-%{zlib_v}.tar.gz
+# Source1-md5:	ada18615d2a66dee4d6f5ff916ecd4c6
 Patch0:		%{name}-gettext.patch
 Patch1:		%{name}-zlib.patch
 Patch2:		http://zipcracker.sourceforge.net/zlib-%{zlib_v}.patch.gz
