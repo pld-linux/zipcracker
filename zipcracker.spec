@@ -48,8 +48,8 @@ rm -f missing
 libtoolize --copy --force
 gettextize --copy --force
 aclocal -I %{_aclocaldir}/gnome
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 ln -s zlib-%{zlib_v} zlib
 cd zlib-%{zlib_v}
 CFLAGS="-D_REENTRANT -fPIC %{rpmcflags}"
