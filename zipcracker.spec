@@ -1,9 +1,10 @@
-
-%bcond_without pvm	# Do not use pvm
-
+#
+# Conditional build:
+%bcond_without pvm	# Do not use PVM
+#
 %define zlib_v	1.1.3
-Summary:	program that helps users recover their files from password protected zip archives
-Summary(pl):	program pozwalaj±cy na odzyskiwanie plików z archiwów zip zabezpieczonych has³em
+Summary:	Program that helps users recover their files from password protected zip archives
+Summary(pl):	Program pozwalaj±cy na odzyskiwanie plików z archiwów zip zabezpieczonych has³em
 Name:		zipcracker
 Version:	0.1.1
 Release:	3
@@ -49,7 +50,6 @@ cd zlib-%{zlib_v}
 %patch2 -p0
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__gettextize}
 %{__aclocal} -I %{_aclocaldir}/gnome
