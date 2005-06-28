@@ -1,3 +1,6 @@
+
+%bcond_without pvm	# Do not use pvm
+
 %define zlib_v	1.1.3
 Summary:	program that helps users recover their files from password protected zip archives
 Summary(pl):	program pozwalaj±cy na odzyskiwanie plików z archiwów zip zabezpieczonych has³em
@@ -23,7 +26,7 @@ BuildRequires:	gnome-libs-devel >= 1.0.0
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libtool
 BuildRequires:	libxml-devel
-BuildRequires:	pvm-devel >= 3.4.2
+%{?with_pvm:BuildRequires:	pvm-devel >= 3.4.2}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc/X11/GNOME
@@ -65,7 +68,7 @@ CPPFLAGS="-I$PWD/zlib-%{zlib_v}"
 export CPPFLAGS
 %configure \
 	--with-gnome \
-	--with-pvm
+	--with%{!?with_pvm:out}-pvm
 %{__make}
 
 %install
