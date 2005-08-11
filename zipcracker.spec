@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without pvm	# Do not use PVM
+%bcond_without	pvm	# Do not use PVM
 #
 %define zlib_v	1.1.3
 Summary:	Program that helps users recover their files from password protected zip archives
