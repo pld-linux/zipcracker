@@ -4,7 +4,7 @@
 #
 %define zlib_v	1.1.3
 Summary:	Program that helps users recover their files from password protected zip archives
-Summary(pl.UTF-8):   Program pozwalający na odzyskiwanie plików z archiwów zip zabezpieczonych hasłem
+Summary(pl.UTF-8):	Program pozwalający na odzyskiwanie plików z archiwów zip zabezpieczonych hasłem
 Name:		zipcracker
 Version:	0.1.1
 Release:	3
