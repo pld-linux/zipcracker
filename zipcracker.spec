@@ -4,7 +4,7 @@
 #
 %define zlib_v	1.1.3
 Summary:	Program that helps users recover their files from password protected zip archives
-Summary(pl):	Program pozwalaj±cy na odzyskiwanie plikÛw z archiwÛw zip zabezpieczonych has≥em
+Summary(pl.UTF-8):   Program pozwalajƒÖcy na odzyskiwanie plik√≥w z archiw√≥w zip zabezpieczonych has≈Çem
 Name:		zipcracker
 Version:	0.1.1
 Release:	3
@@ -37,10 +37,10 @@ ZipCracker is a program that helps users recover their files from
 password protected zip archives, when the user has forgotten the
 password. ZipCracker uses brute force to find the password.
 
-%description -l pl
-ZipCracker to program pozwalaj±cy na odzyskiwanie plikÛw z archiwÛw
-zip zabezpieczonych has≥em w przypadkach gdy uøytkownik zapomnia≥
-has≥a. ZipCracker do znalezienia has≥a uøywa metody brute force.
+%description -l pl.UTF-8
+ZipCracker to program pozwalajƒÖcy na odzyskiwanie plik√≥w z archiw√≥w
+zip zabezpieczonych has≈Çem w przypadkach gdy u≈ºytkownik zapomnia≈Ç
+has≈Ça. ZipCracker do znalezienia has≈Ça u≈ºywa metody brute force.
 
 %prep
 %setup -q -a1
