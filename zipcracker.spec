@@ -18,6 +18,7 @@ Source1:	http://www.gzip.org/zlib/zlib-%{zlib_v}.tar.gz
 Patch0:		%{name}-gettext.patch
 Patch1:		%{name}-zlib.patch
 Patch2:		http://zipcracker.sourceforge.net/zlib-%{zlib_v}.patch.gz
+# Patch2-md5:	1b2a46023831465d27507b527f5a2db8
 URL:		http://sourceforge.net/projects/zipcracker/
 BuildRequires:	ORBit-devel
 BuildRequires:	autoconf
