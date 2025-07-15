@@ -45,10 +45,10 @@ hasła. ZipCracker do znalezienia hasła używa metody brute force.
 
 %prep
 %setup -q -a1
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 cd zlib-%{zlib_v}
-%patch2 -p0
+%patch -P2 -p0
 
 %build
 %{__libtoolize}
